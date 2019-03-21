@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SAKI Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <!-- For TomTom maps -->
+    <link rel='stylesheet' type='text/css' href='sdk/map.css'>
+    <script src='sdk/tomtom.min.js'></script>
+
+    <!-- Our CSS file -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <!-- GOOGLE DISPLAY FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <!-- GOOGLEFONTS SERIF SUBHEADER -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron icy_blue tan_bottom clearance jumbotron_edge">
+            <h1 class="display-4 fredericka dark_blue">SAKI Study</h1>
+            <br>
+            <div class="grey_back rounded">
+                <p>&#8226;&nbsp;The Flag icon is your location.</p> 
+                <p>&#8226;&nbsp;Icons with a person are classmates in the area!</p>
+                <p>&#8226;&nbsp;You can choose the person's button from the list below the map.</p>
+            </div> <!-- close grey_back -->
+        </div> <!--close jumbotron-->
+    </div> <!--close container-->
+
+    <div class="container">
+        <div class="mapContainer">
+            <div id='map'></div>
+        </div>
+        <!-- <br> -->
+        <div class="jumbotron jumbotron_edge clearance ">
+            <h4 class="ptserif">Available classmates by distance</h4>
+            <br>
+            <form action="">
+                <!-- Displays students -->
+                <table class="table table-hover">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <!-- <th scope="col">Address</th> -->
+                            <th scope="col">Miles away</th>
+                            <!-- <th scope="col">Hours</th> -->
+                            <th scope="col">Time when they leave</th>
+                            <th scope="col">Select Student</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <br>
+            </form>
+        </div> <!-- close jumbotron -->
+    </div> <!--close Bootstrap "container" -->
+    </div>
+
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <script src="assets/app.js"></script>
+
+</body>
+
+</html>
